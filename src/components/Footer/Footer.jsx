@@ -6,30 +6,16 @@ export const Footer = () => {
   return (
     <footer>
       <div className="footer-logo"></div>
-      <div className="footer-contact-button">
-        <Link to="Contact" smooth={true} duration={500}>
-          <button className="btn primary">Let's Connect</button>
-        </Link>
-      </div>
       <div className="footer-copyright">
         <p>©2024 Ruben Cerda, All Rights Reserved</p>
         <ul className="footer-social-media">
           <li>
             <a
-              href="https://www.youtube.com/channel/UCyuT4FGG3aFXKcGuueig2ug"
+              href="cerdaruben01@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i className="fa-brands fa-youtube"></i>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.instagram.com/ruben_1249"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fa-brands fa-instagram"></i>
+              <i className="fa fa-envelope"></i>
             </a>
           </li>
           <li>

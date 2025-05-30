@@ -35,7 +35,7 @@
 }
 
 .animated-text {
-  animation: changeText 5s infinite;
+  animation: changeText 3s infinite;
 }
 
 .fullname {
@@ -122,11 +122,8 @@
   10% {
     opacity: 1;
   }
-  20% {
+  80% {
     opacity: 1;
-  }
-  30% {
-    opacity: 0;
   }
   100% {
     opacity: 0;

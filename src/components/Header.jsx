@@ -1,7 +1,13 @@
 import React, { useState, useEffect } from "react";
 import "../styling/Header.css";
 import picture from "../assets/Ruben_cerda_portrait.JPG";
-const prompts = ["a Developer", "a Designer", "an Innovator", "a Creator"];
+const prompts = [
+  "a Developer",
+  "a software engineer",
+  "an innovator",
+  "a creator",
+  "a problem solver",
+];
 
 export const Header = () => {
   const [index, setIndex] = useState(0);

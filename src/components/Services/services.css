@@ -13,6 +13,11 @@
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   padding: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.services-item:hover {
+  transform: translateY(-10px) scale(1.05);
 }
 
 .services-item i {
@@ -54,6 +59,13 @@
   margin-top: 20px;
   width: 120px;
   padding: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.services-container button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .services-description-container img {

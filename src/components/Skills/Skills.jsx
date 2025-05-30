@@ -17,7 +17,7 @@ export const Skills = () => {
       items: [
         { name: "Node.js", icon: "fab fa-node-js" },
         { name: "Python", icon: "fab fa-python" },
-        { name: "Java", icon: "fab fa-java" },
+        { name: "golang", icon: "fab fa-golang" },
         { name: "SQL", icon: "fas fa-database" },
       ],
     },

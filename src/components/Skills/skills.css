@@ -43,7 +43,7 @@
 }
 
 .skill-category:hover {
-  transform: translateY(-5px);
+  transform: translateY(-10px) scale(1.05);
 }
 
 .skill-category h2 {
@@ -73,7 +73,7 @@
 .skill-item:hover {
   background: #fdb448;
   color: white;
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 
 .skill-item i {

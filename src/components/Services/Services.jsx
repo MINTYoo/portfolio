@@ -1,21 +1,21 @@
 import React from "react";
 import "./services.css";
+
 export const Services = () => {
   return (
     <div id="Services" className="services-container">
       <div className="services-list-container">
-        {/* desc */}
+        {/* Description */}
         <div className="services-description-container">
           <h1>
             My <br />
-            <span>Services</span>
+            <span>Expertise</span>
           </h1>
           <p>
-            As a versatile developer with a strong foundation in computer
-            science, I bring expertise across multiple domains. My technical
-            skills span from full-stack development to advanced data science and
-            cloud architecture. I'm passionate about creating efficient,
-            scalable solutions while staying current with emerging technologies.
+            I'm a developer with a strong computer science background and
+            hands-on experience in full-stack development, cloud infrastructure,
+            and systems engineering. I enjoy solving real-world problems through
+            scalable and efficient technology.
           </p>
           <button
             onClick={() =>
@@ -27,42 +27,43 @@ export const Services = () => {
             Let's Connect
           </button>
         </div>
-        {/* item */}
+
+        {/* Service Items */}
         <div className="service-item-container">
           <div className="services-item">
             <i className="fa-solid fa-code"></i>
             <div className="item-desc">
-              <h3>Web Development</h3>
+              <h3>Full-Stack Development</h3>
               <p>
-                Full-stack development expertise with React, Node.js, and modern
-                JavaScript frameworks. Experience in building responsive,
-                performant web applications with a focus on user experience and
-                clean code architecture.
+                Skilled in building responsive web and mobile applications using
+                React, React Native, Node.js, Flask, fastapi, and Tailwind CSS.
+                Experienced with RESTful APIs and modern design patterns.
               </p>
             </div>
           </div>
-          <div className="services-item">
-            <i className="fa-solid fa-brain"></i>
-            <div className="item-desc">
-              <h3>Data Science & Machine Learning</h3>
-              <p>
-                Proficient in data analysis, machine learning, and AI
-                implementation. Experience with predictive modeling, natural
-                language processing, and computer vision. Skilled in using
-                Python, TensorFlow, and scikit-learn for developing intelligent
-                solutions.
-              </p>
-            </div>
-          </div>
+
           <div className="services-item">
             <i className="fa-solid fa-cloud"></i>
             <div className="item-desc">
-              <h3>Cloud Services & DevOps</h3>
+              <h3>Cloud & DevOps</h3>
               <p>
-                Expertise in cloud platforms (AWS, Azure) and DevOps practices.
-                Experience with containerization, CI/CD pipelines, and
-                infrastructure as code. Skilled in implementing scalable,
-                secure, and cost-effective cloud solutions.
+                Proficient with AWS (Amplify, Cognito, EC2, S3), Azure, and
+                Google Cloud. Experienced in infrastructure automation using
+                Terraform, containerization with Docker, and implementing CI/CD
+                pipelines for efficient deployments.
+              </p>
+            </div>
+          </div>
+
+          <div className="services-item">
+            <i className="fa-solid fa-microchip"></i>
+            <div className="item-desc">
+              <h3>Systems & Data Engineering</h3>
+              <p>
+                Background in systems programming with C++ and Golang, and
+                experienced in data modeling and querying with SQL. Skilled in
+                building efficient backend systems and handling low-level
+                application logic.
               </p>
             </div>
           </div>
