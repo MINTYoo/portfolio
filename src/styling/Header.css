@@ -1,0 +1,134 @@
+/* Ensure the header content is not covered by the navbar */
+.header-container {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  margin-top: 100px; /* Adjust this value to match the height of your navbar */
+}
+
+@media (max-width: 767px) {
+  /* Specific adjustments for mobile view */
+  .header-container {
+    margin-top: 150px; /* Increase this value if necessary to ensure content is not covered */
+  }
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: 200px;
+  margin-left: 30px;
+}
+
+.header-content h1 {
+  font-size: 4rem;
+  font-family: "Saira", sans-serif;
+}
+
+.header-content p {
+  font-size: 1.2rem;
+  line-height: 1.9rem;
+  font-family: "Saira", sans-serif;
+  color: #70667f;
+}
+
+.animated-text {
+  animation: changeText 5s infinite;
+}
+
+.fullname {
+  font-size: 3rem;
+  margin-top: 10px;
+  color: #e08804;
+  font-family: "play", sans-serif;
+}
+
+.header-payment-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding-left: 30px;
+  width: 40%;
+}
+
+.header-payment-container button {
+  background-color: #fcb12f;
+  border: none;
+  padding: 10px;
+  font-size: 1.2rem;
+  font-family: "play", sans-serif;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.2);
+}
+
+.fa-brands,
+.fa-paypal {
+  color: #003087;
+  font-size: 1.5rem;
+}
+
+.profile-img-container {
+  position: relative;
+  margin: 20px;
+}
+
+.profile-img-container img {
+  width: 100%;
+  max-width: 300px; /* Ensures the image does not exceed a certain width */
+  height: auto;
+  border-bottom: 10px solid #fcd212;
+  border-top: 10px solid #003087;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 10px;
+}
+
+/* Media query */
+@media (min-width: 768px) {
+  .header-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px; /* Ensure the content is pushed down sufficiently */
+  }
+
+  .header-content {
+    width: 60%;
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .profile-img-container {
+    width: 40%;
+    margin: 0;
+    display: flex;
+  }
+
+  .profile-img-container img {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+@keyframes changeText {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}

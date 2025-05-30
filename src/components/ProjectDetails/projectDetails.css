@@ -1,0 +1,157 @@
+.project-details-container {
+  padding: 3rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-details-container h1 {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #333;
+  font-size: 2.8rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.5rem;
+}
+
+.project-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-image {
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eee;
+}
+
+.project-image img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  transition: transform 0.5s ease;
+}
+
+.project-image:hover img {
+  transform: scale(1.05);
+}
+
+.project-info {
+  padding: 2rem;
+}
+
+.project-info h2 {
+  color: #333;
+  margin-bottom: 1.2rem;
+  font-size: 2rem;
+}
+
+.project-info p {
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.technologies,
+.features {
+  margin-top: 2rem;
+}
+
+.technologies h3,
+.features h3 {
+  color: #333;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  border-bottom: 2px solid #fdb448;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+
+.technologies ul,
+.features ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.technologies li,
+.features li {
+  color: #666;
+  margin-bottom: 0.8rem;
+  padding-left: 1.8rem;
+  position: relative;
+}
+
+.technologies li:before,
+.features li:before {
+  content: "\2022";
+  position: absolute;
+  left: 0;
+  color: #fdb448;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.back-button {
+  display: inline-block;
+  margin-bottom: 2rem;
+  padding: 0.8rem 1.5rem;
+  background-color: #fdb448;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #e0a03c;
+}
+
+@media (min-width: 768px) {
+  .project-details-container {
+    padding: 4rem 2rem;
+  }
+
+  .project-details-container h1 {
+    font-size: 3.5rem;
+  }
+
+  .project-info h2 {
+    font-size: 2.2rem;
+  }
+
+  .project-image {
+    height: 350px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .project-details-container {
+    padding: 5rem 3rem;
+  }
+
+  .project-image {
+    height: 400px;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+}
